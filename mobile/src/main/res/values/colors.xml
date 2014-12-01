@@ -1,0 +1,11 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="pulse_light_blue">#31bbf7</color>
+    <color name="pulse_green">#92cc00</color>
+    <color name="pulse_red">#ff2600</color>
+    <color name="pulse_grey">#ebebeb</color>
+    <color name="pulse_font">#59595b</color>
+    <color name="pulse_orange">#f67f3d</color>
+
+</resources>

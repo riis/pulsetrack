@@ -1,0 +1,394 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.riis.pulsetrack.dashboard.DailyFragment"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:background="@android:color/white"
+    android:padding="3dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/pulse_light_blue"
+        android:id="@+id/toplayout"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:id="@+id/currentBpmTextView"
+            android:textColor="#ff2fbbf5"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="@drawable/heart"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView"
+            android:longClickable="false"
+            android:maxWidth="90dp"
+            android:maxHeight="100dp"
+            android:minHeight="90dp"
+            android:minWidth="80dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Heart Rate"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="false"
+            android:maxHeight="20dp"
+            android:maxLines="1" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#fffffffb">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="000"
+                    android:id="@+id/beginTextView"
+                    android:layout_alignParentTop="false"
+                    android:textColor="@color/pulse_font"
+                    android:textSize="24sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_above="@+id/imageViewBelowRange"
+                    android:layout_marginLeft="5dp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageViewBelowRange"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/belowbar"
+                    android:layout_alignParentLeft="true" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageViewNeedleLow"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/needle" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="000"
+                    android:id="@+id/belowValueText"
+                    android:layout_alignParentBottom="false"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/pulse_font"
+                    android:textSize="24sp"
+                    android:layout_below="@+id/imageViewBelowRange" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#fffffffb" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="000"
+                    android:id="@+id/middleBeginTextView"
+                    android:layout_alignParentTop="false"
+                    android:textSize="24sp"
+                    android:textColor="@color/pulse_font"
+                    android:layout_alignParentLeft="true"
+                    android:layout_above="@+id/imageViewInRange" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="999"
+                    android:id="@+id/middleEndTextView"
+                    android:textSize="24sp"
+                    android:textColor="@color/pulse_font"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_above="@+id/imageViewInRange"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageViewInRange"
+                    android:src="@drawable/greenbar"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageViewNeedleMid"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/needle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="000"
+                    android:textSize="24sp"
+                    android:id="@+id/midValueText"
+                    android:layout_alignParentBottom="false"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/pulse_font"
+                    android:layout_below="@+id/imageViewInRange" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#ffffffff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="999"
+                    android:id="@+id/endTextView"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/pulse_font"
+                    android:textSize="24sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_above="@+id/imageViewAboveRange"
+                    android:layout_marginRight="5dp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageViewAboveRange"
+                    android:src="@drawable/redbar"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageViewNeedleHigh"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/needle" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="000"
+                    android:textSize="24sp"
+                    android:id="@+id/aboveValueText"
+                    android:layout_alignParentBottom="false"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/pulse_font"
+                    android:layout_below="@+id/imageViewAboveRange" />
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ffc0c0c0" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/pulse_grey"
+                android:layout_gravity="center"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="00"
+                    android:id="@+id/minTextView"
+                    android:layout_row="3"
+                    android:layout_column="3"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:textColor="@color/pulse_font"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Minimum BPM (Week)"
+                    android:id="@+id/textView11"
+                    android:layout_below="@+id/minTextView"
+                    android:layout_alignParentLeft="false"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/pulse_font" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/pulse_grey"
+                android:layout_gravity="center"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="00"
+                    android:id="@+id/maxTextView"
+                    android:layout_row="3"
+                    android:layout_column="3"
+                    android:layout_gravity="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/pulse_font"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Maximum BPM (Week)"
+                    android:id="@+id/textView111"
+                    android:layout_below="@+id/maxTextView"
+                    android:layout_alignParentLeft="false"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/pulse_font" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/pulse_grey"
+                android:layout_gravity="center"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="3dp"
+                android:padding="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="00"
+                    android:id="@+id/avgTextView"
+                    android:layout_row="3"
+                    android:layout_column="3"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/pulse_font" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Average BPM (Week)"
+                    android:id="@+id/textView1111"
+                    android:layout_below="@+id/avgTextView"
+                    android:layout_alignParentLeft="false"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/pulse_font" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ffffffff"
+        android:paddingBottom="3dp"
+        android:padding="3dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/weeklyLayout"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="3dp"
+            android:layout_alignParentBottom="false">
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
