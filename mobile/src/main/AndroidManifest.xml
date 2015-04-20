@@ -20,7 +20,6 @@
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -29,12 +28,6 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
         <!-- Note: If using AndroidStudio, Gradle will automatically add this for you. -->
-
-
-        <activity
-            android:name="com.riis.pulsetrackpro.MainActivity"
-            android:label="@string/title_activity_main" >
-        </activity>
     </application>
 
 </manifest>

@@ -310,9 +310,6 @@ public class MainActivity extends Activity
             case 1:
                 //    mTitle = "PulseTrack - Profile";
                 break;
-            case 2:
-                //   mTitle = "PulseTrack - Tour";
-                break;
         }
     }
 
@@ -355,18 +352,22 @@ public class MainActivity extends Activity
 
         if (item.getItemId() == R.id.action_dashboard) {
 
-            if (getProfileFragment().isVisible()) {
-                showDailyDashboardFromProfile(item);
+            if (DataManager.getInstance().isSetup()) {
+                if (getProfileFragment().isVisible()) {
+                    showDailyDashboardFromProfile(item);
+                    return true;
+                }
+
+
+                if (item.getTitle().equals(TITLE_DAILY)) {
+                    showDailyDashboard(item);
+                } else {
+                    showWeeklyDashboard(item);
+                }
                 return true;
-            }
-
-
-            if (item.getTitle().equals(TITLE_DAILY)) {
-                showDailyDashboard(item);
             } else {
-                showWeeklyDashboard(item);
+                Toast.makeText(getApplicationContext(), "A Profile is required to proceed.", Toast.LENGTH_LONG).show();
             }
-            return true;
         }
         return super.onOptionsItemSelected(item);
     }

@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.riis.pulsetrackpro.R;
 import com.riis.pulsetrackpro.model.DataManager;
@@ -24,6 +25,7 @@ import com.riis.pulsetrackpro.util.ValidationException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Locale;
 
 import butterknife.ButterKnife;
@@ -62,12 +64,17 @@ public class ProfileFragment extends Fragment {
                               int dayOfMonth) {
 
             try {
-
-                updateDisplay(monthOfYear, dayOfMonth, year);
-                mCalendar = Calendar.getInstance();
-                SimpleDateFormat sdf = new SimpleDateFormat("mm dd yyyy", Locale.getDefault());
-                mCalendar.setTime(sdf.parse(monthOfYear + " " + dayOfMonth + " " + year));// all done
-                getProfile().setDOB(mCalendar);
+                Calendar cal = Calendar.getInstance();
+                cal.setTime(new Date());  //use java.util.Date object as arguement
+                if (year > cal.get(Calendar.YEAR) || (year == cal.get(Calendar.YEAR) && monthOfYear > cal.get(Calendar.MONTH)) || (year == cal.get(Calendar.YEAR) && monthOfYear == cal.get(Calendar.MONTH) && dayOfMonth > cal.get(Calendar.DATE))) {
+                    Toast.makeText(getActivity().getApplicationContext(), "Cannot enter a birthdate in the future.", Toast.LENGTH_LONG).show();
+                } else {
+                    updateDisplay(monthOfYear, dayOfMonth, year);
+                    mCalendar = Calendar.getInstance();
+                    SimpleDateFormat sdf = new SimpleDateFormat("mm dd yyyy", Locale.getDefault());
+                    mCalendar.setTime(sdf.parse(monthOfYear + " " + dayOfMonth + " " + year));// all done
+                    getProfile().setDOB(mCalendar);
+                }
 
             } catch (ParseException e) {
                 e.printStackTrace();
@@ -85,10 +92,10 @@ public class ProfileFragment extends Fragment {
 
     // Update the date in the TextView
     private void updateDisplay(int month, int day, int year) {
-        birthDateTextView.setText(new StringBuilder()
-                .append(month + 1)
-                .append("-").append(day).append("-")
-                .append(year).append(" "));
+            birthDateTextView.setText(new StringBuilder()
+                    .append(month + 1)
+                    .append("-").append(day).append("-")
+                    .append(year).append(" "));
     }
 
 

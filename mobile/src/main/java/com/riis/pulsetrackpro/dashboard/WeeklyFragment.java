@@ -56,34 +56,35 @@ public class WeeklyFragment extends DashboardFragment {
     void displayWeeklyChart(FitHeartRateModel model) {
 
         ArrayList<FitHeartRateSummary> fitDataList = model.getWeeklyList();
-        ArrayList<GraphView.GraphViewData> graphViewDataArrayList = new ArrayList<GraphView.GraphViewData>();
+        if (fitDataList.size() > 0) {
+            ArrayList<GraphView.GraphViewData> graphViewDataArrayList = new ArrayList<GraphView.GraphViewData>();
 
 
-        for (int i = 0; i < 7 && i < fitDataList.size(); i++) {
-            graphViewDataArrayList.add(
-                    new GraphView.GraphViewData(i, fitDataList.get(i).getAverageBPM()));
+            for (int i = 0; i < 7 && i < fitDataList.size(); i++) {
+                graphViewDataArrayList.add(
+                        new GraphView.GraphViewData(i, fitDataList.get(i).getAverageBPM()));
+            }
+
+            GraphViewSeries graphViewSeries = new
+                    GraphViewSeries(graphViewDataArrayList.toArray(
+                    new GraphView.GraphViewData[graphViewDataArrayList.size()]));
+            GraphView graphView = new BarGraphView(getActivity(), "Weekly Heart Rate");
+            graphView.addSeries(graphViewSeries);
+
+            //   ArrayList<String> timeList = new ArrayList<String>();
+            //   for (int i = 0; i < 7 && i < fitDataList.size(); i++) {
+            //       String dateTime = fitDataList.get(i).getDateShortForm();
+            //       timeList.add(dateTime);
+            //   }
+
+            String[] days = {"Su", "M", "T", "W", "Th", "F", "Sa"};
+
+            graphView.setHorizontalLabels(days);
+            LinearLayout layout = (LinearLayout) getActivity().findViewById(R.id.weeklyLayout);
+            if (layout != null) {
+                layout.addView(graphView);
+            }
         }
-
-        GraphViewSeries graphViewSeries = new
-                GraphViewSeries(graphViewDataArrayList.toArray(
-                new GraphView.GraphViewData[graphViewDataArrayList.size()]));
-        GraphView graphView = new BarGraphView(getActivity(), "Weekly Heart Rate");
-        graphView.addSeries(graphViewSeries);
-
-     //   ArrayList<String> timeList = new ArrayList<String>();
-     //   for (int i = 0; i < 7 && i < fitDataList.size(); i++) {
-     //       String dateTime = fitDataList.get(i).getDateShortForm();
-     //       timeList.add(dateTime);
-     //   }
-
-        String[] days = {"Su", "M", "T","W", "Th", "F", "Sa"};
-
-        graphView.setHorizontalLabels(days);
-        LinearLayout layout = (LinearLayout) getActivity().findViewById(R.id.weeklyLayout);
-        if (layout != null) {
-            layout.addView(graphView);
-        }
-
 
     }
 

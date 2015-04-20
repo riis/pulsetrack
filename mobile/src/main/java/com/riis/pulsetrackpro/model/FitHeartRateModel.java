@@ -68,14 +68,18 @@ public class FitHeartRateModel {
     }
 
     public Integer getMaxWeeklyBPM() {
-        return mMaxValueSet.last();
+        Integer value = 0;
+        try {
+            value = mMaxValueSet.last();
+        } catch (Exception ex) {}
+        return value;
     }
 
     public Integer getMinWeeklyBPM() {
         Integer value = 0;
-        if(mMaxValueSet != null && mMaxValueSet.first() != null){
+        try {
             value = mMaxValueSet.first();
-        }
+        } catch (Exception ex) {}
         return value;
 
     }
@@ -89,8 +93,12 @@ public class FitHeartRateModel {
             total = total + value;
         }
 
-        average = total / size;
-        return average;
+        if (size == 0) {
+            return 0;
+        } else {
+            average = total / size;
+            return average;
+        }
     }
 
     public String getMaxWeeklyBPMText() {
