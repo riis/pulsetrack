@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.riis.pulsetrack.main.MainActivity">
+    tools:context="com.riis.pulsetrackpro.main.MainActivity">
     <item android:id="@+id/action_dashboard" android:title="@string/action_weekly"
         android:showAsAction="withText|ifRoom" android:icon="@android:drawable/ic_menu_my_calendar" />
 
