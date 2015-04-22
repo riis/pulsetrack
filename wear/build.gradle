@@ -6,7 +6,7 @@ android {
     buildToolsVersion "21.1.0"
 
     defaultConfig {
-        applicationId "com.riis.pulsetrack"
+        applicationId "com.riis.pulsetracker"
         minSdkVersion 20
         targetSdkVersion 21
         versionCode 1

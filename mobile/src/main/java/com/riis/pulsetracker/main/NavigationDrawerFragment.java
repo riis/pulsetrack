@@ -1,4 +1,4 @@
-package com.riis.pulsetrack.main;
+package com.riis.pulsetracker.main;
 
 
 import android.app.ActionBar;
@@ -21,7 +21,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.riis.pulsetrack.R;
+import com.riis.pulsetracker.R;
 
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.

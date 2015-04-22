@@ -6,7 +6,14 @@
         jumboMode="false"
         revision="21.1.0"
         sha1="eae78ae84e836e9325e9934d885ccb5dc161d685">
-        <dex dex="C:\RIIS\pulsetrack\mobile\build\intermediates\pre-dexed\release\mpandroidchartlibrary-1-7-3-c639e9bd87dbae22d0eb536931d5315d2f91e866.jar" />
+        <dex dex="C:\RIIS\pulsetrack\mobile\build\intermediates\pre-dexed\debug\mpandroidchartlibrary-1-7-3-c639e9bd87dbae22d0eb536931d5315d2f91e866.jar" />
+    </item>
+    <item
+        jar="C:\RIIS\pulsetrack\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\libs\internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="C:\RIIS\pulsetrack\mobile\build\intermediates\pre-dexed\debug\internal_impl-21.0.0-5eaa856667e9f880ff828be459cc77ff9d18efad.jar" />
     </item>
     <item
         jar="C:\RIIS\pulsetrack\wear\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
@@ -14,13 +21,6 @@
         revision="21.1.0"
         sha1="8694693636ab36910c8100ce527c258ff3ebece0">
         <dex dex="C:\RIIS\pulsetrack\wear\build\intermediates\pre-dexed\release\classes-8f3a09335157d4522701e17f871c8fac367d78ae.jar" />
-    </item>
-    <item
-        jar="C:\RIIS\pulsetrack\mobile\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\libs\internal_impl-21.0.0.jar"
-        jumboMode="false"
-        revision="21.1.0"
-        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
-        <dex dex="C:\RIIS\pulsetrack\mobile\build\intermediates\pre-dexed\release\internal_impl-21.0.0-5eaa856667e9f880ff828be459cc77ff9d18efad.jar" />
     </item>
     <item
         jar="C:\RIIS\pulsetrack\wear\build\intermediates\exploded-aar\com.google.android.support\wearable\1.0.0\classes.jar"
@@ -34,14 +34,14 @@
         jumboMode="false"
         revision="21.1.0"
         sha1="7eedf8c110966da7d80d4198b2e9d1e8051611be">
-        <dex dex="C:\RIIS\pulsetrack\mobile\build\intermediates\pre-dexed\release\classes-e93479a4106d14d2c7d10a6ccf439393f922ede8.jar" />
+        <dex dex="C:\RIIS\pulsetrack\mobile\build\intermediates\pre-dexed\debug\classes-e93479a4106d14d2c7d10a6ccf439393f922ede8.jar" />
     </item>
     <item
         jar="C:\RIIS\pulsetrack\mobile\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\classes.jar"
         jumboMode="false"
         revision="21.1.0"
         sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
-        <dex dex="C:\RIIS\pulsetrack\mobile\build\intermediates\pre-dexed\release\classes-eab17ae0856223fb594656a5357873b34e44c58c.jar" />
+        <dex dex="C:\RIIS\pulsetrack\mobile\build\intermediates\pre-dexed\debug\classes-eab17ae0856223fb594656a5357873b34e44c58c.jar" />
     </item>
     <item
         jar="C:\RIIS\pulsetrack\wear\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\libs\internal_impl-20.0.0.jar"
@@ -62,7 +62,7 @@
         jumboMode="false"
         revision="21.1.0"
         sha1="686344a780033e4ba22b926cd225f8d4941247e6">
-        <dex dex="C:\RIIS\pulsetrack\mobile\build\intermediates\pre-dexed\release\classes-0771b9ba58e2008bf6a7cf71b77207ac2fc13917.jar" />
+        <dex dex="C:\RIIS\pulsetrack\mobile\build\intermediates\pre-dexed\debug\classes-0771b9ba58e2008bf6a7cf71b77207ac2fc13917.jar" />
     </item>
     <item
         jar="C:\RIIS\pulsetrack\wear\build\intermediates\exploded-aar\com.android.support\support-v13\20.0.0\classes.jar"
@@ -76,7 +76,14 @@
         jumboMode="false"
         revision="21.1.0"
         sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
-        <dex dex="C:\RIIS\pulsetrack\mobile\build\intermediates\pre-dexed\release\support-annotations-21.0.0-ac1cea262749e37d8b6ba269f1d1193e283b997d.jar" />
+        <dex dex="C:\RIIS\pulsetrack\mobile\build\intermediates\pre-dexed\debug\support-annotations-21.0.0-ac1cea262749e37d8b6ba269f1d1193e283b997d.jar" />
+    </item>
+    <item
+        jar="C:\Users\cbeyer\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\6.0.0\3a10b25b6820e19102e118711afe6a66c0bae123\butterknife-6.0.0.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="3a10b25b6820e19102e118711afe6a66c0bae123">
+        <dex dex="C:\RIIS\pulsetrack\mobile\build\intermediates\pre-dexed\debug\butterknife-6.0.0-b0f6bc1a85d1c1961c3ce1f366d9571b3f7299a4.jar" />
     </item>
     <item
         jar="C:\Users\cbeyer\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
@@ -84,13 +91,6 @@
         revision="21.1.0"
         sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
         <dex dex="C:\RIIS\pulsetrack\wear\build\intermediates\pre-dexed\release\support-annotations-20.0.0-1738d5d528fb8a810313c89b004e431a6061b18c.jar" />
-    </item>
-    <item
-        jar="C:\Users\cbeyer\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\6.0.0\3a10b25b6820e19102e118711afe6a66c0bae123\butterknife-6.0.0.jar"
-        jumboMode="false"
-        revision="21.1.0"
-        sha1="3a10b25b6820e19102e118711afe6a66c0bae123">
-        <dex dex="C:\RIIS\pulsetrack\mobile\build\intermediates\pre-dexed\release\butterknife-6.0.0-b0f6bc1a85d1c1961c3ce1f366d9571b3f7299a4.jar" />
     </item>
     <item
         jar="C:\RIIS\pulsetrack\wear\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\6.1.71\classes.jar"
@@ -104,7 +104,7 @@
         jumboMode="false"
         revision="21.1.0"
         sha1="0f6d5c1ef2e982c3b7858408e3df389cf5d202da">
-        <dex dex="C:\RIIS\pulsetrack\mobile\build\intermediates\pre-dexed\release\classes-e377069c3b02b294eb5618745401975fe2f501f0.jar" />
+        <dex dex="C:\RIIS\pulsetrack\mobile\build\intermediates\pre-dexed\debug\classes-e377069c3b02b294eb5618745401975fe2f501f0.jar" />
     </item>
 
 </items>

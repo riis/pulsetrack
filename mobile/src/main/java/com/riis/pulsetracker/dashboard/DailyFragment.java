@@ -1,4 +1,4 @@
-package com.riis.pulsetrack.dashboard;
+package com.riis.pulsetracker.dashboard;
 
 
 import android.graphics.Color;
@@ -13,9 +13,9 @@ import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.GraphViewDataInterface;
 import com.jjoe64.graphview.GraphViewSeries;
 import com.jjoe64.graphview.ValueDependentColor;
-import com.riis.pulsetrack.R;
-import com.riis.pulsetrack.model.FitHeartRateBPM;
-import com.riis.pulsetrack.model.FitHeartRateModel;
+import com.riis.pulsetracker.R;
+import com.riis.pulsetracker.model.FitHeartRateBPM;
+import com.riis.pulsetracker.model.FitHeartRateModel;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -35,7 +35,7 @@ public class DailyFragment extends DashboardFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle state) {
         View rootView = inflater.inflate(R.layout.fragment_daily2, container, false);
         ButterKnife.inject(this, rootView);
-        getActivity().getActionBar().setTitle("PulseTrack - Daily Dashboard");
+        getActivity().getActionBar().setTitle("PulseTracker - Daily Dashboard");
         return rootView;
     }
 

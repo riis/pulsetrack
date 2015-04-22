@@ -1,4 +1,4 @@
-package com.riis.pulsetrack.main;
+package com.riis.pulsetracker.main;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -32,13 +32,13 @@ import com.google.android.gms.fitness.FitnessStatusCodes;
 import com.google.android.gms.fitness.data.DataType;
 import com.google.android.gms.fitness.request.DataReadRequest;
 import com.google.android.gms.fitness.result.DataReadResult;
-import com.riis.pulsetrack.R;
-import com.riis.pulsetrack.dashboard.DailyFragment;
-import com.riis.pulsetrack.dashboard.WeeklyFragment;
-import com.riis.pulsetrack.model.DataManager;
-import com.riis.pulsetrack.model.FitHeartRateModel;
-import com.riis.pulsetrack.profile.ProfileFragment;
-import com.riis.pulsetrack.util.AppEvent;
+import com.riis.pulsetracker.R;
+import com.riis.pulsetracker.dashboard.DailyFragment;
+import com.riis.pulsetracker.dashboard.WeeklyFragment;
+import com.riis.pulsetracker.model.DataManager;
+import com.riis.pulsetracker.model.FitHeartRateModel;
+import com.riis.pulsetracker.profile.ProfileFragment;
+import com.riis.pulsetracker.util.AppEvent;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -63,7 +63,7 @@ public class MainActivity extends Activity
     private NavigationDrawerFragment mNavigationDrawerFragment;
     private boolean authInProgress = false;
     private GoogleApiClient mClient = null;
-    //  private String mTitle = "PulseTrack - ";
+    //  private String mTitle = "pulsetracker - ";
     private ProfileFragment mProfileFragment;
 
     @Override
@@ -305,10 +305,10 @@ public class MainActivity extends Activity
     public void onSectionAttached(int number) {
         switch (number) {
             case 0:
-                //   mTitle = "PulseTrack - Daily Dashboard";
+                //   mTitle = "pulsetracker - Daily Dashboard";
                 break;
             case 1:
-                //    mTitle = "PulseTrack - Profile";
+                //    mTitle = "pulsetracker - Profile";
                 break;
         }
     }

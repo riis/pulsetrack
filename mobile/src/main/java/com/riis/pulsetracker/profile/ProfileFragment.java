@@ -1,4 +1,4 @@
-package com.riis.pulsetrack.profile;
+package com.riis.pulsetracker.profile;
 
 
 import android.app.DatePickerDialog;
@@ -16,11 +16,11 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.riis.pulsetrack.R;
-import com.riis.pulsetrack.model.DataManager;
-import com.riis.pulsetrack.model.Profile;
-import com.riis.pulsetrack.util.GuiUtil;
-import com.riis.pulsetrack.util.ValidationException;
+import com.riis.pulsetracker.R;
+import com.riis.pulsetracker.model.DataManager;
+import com.riis.pulsetracker.model.Profile;
+import com.riis.pulsetracker.util.GuiUtil;
+import com.riis.pulsetracker.util.ValidationException;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -105,7 +105,7 @@ public class ProfileFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_profile, container, false);
         ButterKnife.inject(this, rootView);
-        getActivity().getActionBar().setTitle("PulseTrack - Profile");
+        getActivity().getActionBar().setTitle("PulseTracker - Profile");
         return rootView;
     }
 

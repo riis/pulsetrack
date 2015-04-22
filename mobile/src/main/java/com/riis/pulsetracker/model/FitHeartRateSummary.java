@@ -1,4 +1,4 @@
-package com.riis.pulsetrack.model;
+package com.riis.pulsetracker.model;
 
 
 import com.google.android.gms.fitness.data.DataPoint;

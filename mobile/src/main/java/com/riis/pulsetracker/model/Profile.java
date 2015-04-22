@@ -1,10 +1,10 @@
-package com.riis.pulsetrack.model;
+package com.riis.pulsetracker.model;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.riis.pulsetrack.util.CalendarUtil;
+import com.riis.pulsetracker.util.CalendarUtil;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

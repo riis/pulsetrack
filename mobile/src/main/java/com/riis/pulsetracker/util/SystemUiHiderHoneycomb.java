@@ -1,4 +1,4 @@
-package com.riis.pulsetrack.util;
+package com.riis.pulsetracker.util;
 
 import android.annotation.TargetApi;
 import android.app.Activity;

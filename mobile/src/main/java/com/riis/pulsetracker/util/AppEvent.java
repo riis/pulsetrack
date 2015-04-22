@@ -1,4 +1,4 @@
-package com.riis.pulsetrack.util;
+package com.riis.pulsetracker.util;
 
 /**
  * Created by davidmckinnon on 11/26/14.

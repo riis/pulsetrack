@@ -1,4 +1,4 @@
-package com.riis.pulsetrack.dashboard;
+package com.riis.pulsetracker.dashboard;
 
 
 import android.os.Bundle;
@@ -10,9 +10,9 @@ import android.widget.LinearLayout;
 import com.jjoe64.graphview.BarGraphView;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.GraphViewSeries;
-import com.riis.pulsetrack.R;
-import com.riis.pulsetrack.model.FitHeartRateModel;
-import com.riis.pulsetrack.model.FitHeartRateSummary;
+import com.riis.pulsetracker.R;
+import com.riis.pulsetracker.model.FitHeartRateModel;
+import com.riis.pulsetracker.model.FitHeartRateSummary;
 
 import java.util.ArrayList;
 
@@ -34,7 +34,7 @@ public class WeeklyFragment extends DashboardFragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        getActivity().getActionBar().setTitle("PulseTrack - Weekly Dashboard");
+        getActivity().getActionBar().setTitle("PulseTracker - Weekly Dashboard");
 
     }
 
