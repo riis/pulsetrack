@@ -1,4 +1,4 @@
-package com.riis.pulsetrackpro.util;
+package com.riis.pulsetrack.util;
 
 
 public class ValidationException extends Throwable {

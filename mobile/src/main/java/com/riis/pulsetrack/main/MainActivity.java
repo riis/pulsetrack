@@ -1,4 +1,4 @@
-package com.riis.pulsetrackpro.main;
+package com.riis.pulsetrack.main;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -32,13 +32,13 @@ import com.google.android.gms.fitness.FitnessStatusCodes;
 import com.google.android.gms.fitness.data.DataType;
 import com.google.android.gms.fitness.request.DataReadRequest;
 import com.google.android.gms.fitness.result.DataReadResult;
-import com.riis.pulsetrackpro.R;
-import com.riis.pulsetrackpro.dashboard.DailyFragment;
-import com.riis.pulsetrackpro.dashboard.WeeklyFragment;
-import com.riis.pulsetrackpro.model.DataManager;
-import com.riis.pulsetrackpro.model.FitHeartRateModel;
-import com.riis.pulsetrackpro.profile.ProfileFragment;
-import com.riis.pulsetrackpro.util.AppEvent;
+import com.riis.pulsetrack.R;
+import com.riis.pulsetrack.dashboard.DailyFragment;
+import com.riis.pulsetrack.dashboard.WeeklyFragment;
+import com.riis.pulsetrack.model.DataManager;
+import com.riis.pulsetrack.model.FitHeartRateModel;
+import com.riis.pulsetrack.profile.ProfileFragment;
+import com.riis.pulsetrack.util.AppEvent;
 
 import java.util.Calendar;
 import java.util.Date;

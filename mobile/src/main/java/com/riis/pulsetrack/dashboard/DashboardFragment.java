@@ -1,4 +1,4 @@
-package com.riis.pulsetrackpro.dashboard;
+package com.riis.pulsetrack.dashboard;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -11,11 +11,11 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.riis.pulsetrackpro.R;
-import com.riis.pulsetrackpro.model.DataManager;
-import com.riis.pulsetrackpro.model.FitHeartRateModel;
-import com.riis.pulsetrackpro.model.HeartRate;
-import com.riis.pulsetrackpro.model.Profile;
+import com.riis.pulsetrack.R;
+import com.riis.pulsetrack.model.DataManager;
+import com.riis.pulsetrack.model.FitHeartRateModel;
+import com.riis.pulsetrack.model.HeartRate;
+import com.riis.pulsetrack.model.Profile;
 
 import java.util.Observable;
 import java.util.Observer;

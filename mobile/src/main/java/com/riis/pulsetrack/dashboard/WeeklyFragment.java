@@ -1,4 +1,4 @@
-package com.riis.pulsetrackpro.dashboard;
+package com.riis.pulsetrack.dashboard;
 
 
 import android.os.Bundle;
@@ -10,9 +10,9 @@ import android.widget.LinearLayout;
 import com.jjoe64.graphview.BarGraphView;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.GraphViewSeries;
-import com.riis.pulsetrackpro.R;
-import com.riis.pulsetrackpro.model.FitHeartRateModel;
-import com.riis.pulsetrackpro.model.FitHeartRateSummary;
+import com.riis.pulsetrack.R;
+import com.riis.pulsetrack.model.FitHeartRateModel;
+import com.riis.pulsetrack.model.FitHeartRateSummary;
 
 import java.util.ArrayList;
 

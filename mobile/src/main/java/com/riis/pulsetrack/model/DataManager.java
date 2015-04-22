@@ -1,8 +1,8 @@
-package com.riis.pulsetrackpro.model;
+package com.riis.pulsetrack.model;
 
 import android.app.Activity;
 
-import com.riis.pulsetrackpro.util.AppEvent;
+import com.riis.pulsetrack.util.AppEvent;
 
 import java.util.Observable;
 

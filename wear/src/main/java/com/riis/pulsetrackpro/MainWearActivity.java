@@ -1,4 +1,4 @@
-package com.riis.pulsetrackpro;
+package com.riis.pulsetrack;
 
 import android.app.Activity;
 import android.os.Bundle;

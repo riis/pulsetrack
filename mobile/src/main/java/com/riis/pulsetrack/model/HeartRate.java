@@ -1,4 +1,4 @@
-package com.riis.pulsetrackpro.model;
+package com.riis.pulsetrack.model;
 
 import static java.lang.Math.round;
 

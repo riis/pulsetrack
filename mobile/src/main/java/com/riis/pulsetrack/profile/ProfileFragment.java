@@ -1,4 +1,4 @@
-package com.riis.pulsetrackpro.profile;
+package com.riis.pulsetrack.profile;
 
 
 import android.app.DatePickerDialog;
@@ -16,11 +16,11 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.riis.pulsetrackpro.R;
-import com.riis.pulsetrackpro.model.DataManager;
-import com.riis.pulsetrackpro.model.Profile;
-import com.riis.pulsetrackpro.util.GuiUtil;
-import com.riis.pulsetrackpro.util.ValidationException;
+import com.riis.pulsetrack.R;
+import com.riis.pulsetrack.model.DataManager;
+import com.riis.pulsetrack.model.Profile;
+import com.riis.pulsetrack.util.GuiUtil;
+import com.riis.pulsetrack.util.ValidationException;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

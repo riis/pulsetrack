@@ -1,4 +1,4 @@
-package com.riis.pulsetrackpro.util;
+package com.riis.pulsetrack.util;
 
 import android.os.CountDownTimer;
 import android.view.View;
@@ -6,8 +6,8 @@ import android.view.animation.ScaleAnimation;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.riis.pulsetrackpro.R;
-import com.riis.pulsetrackpro.model.HeartRate;
+import com.riis.pulsetrack.R;
+import com.riis.pulsetrack.model.HeartRate;
 
 
 public class HeartRateTimer extends CountDownTimer {

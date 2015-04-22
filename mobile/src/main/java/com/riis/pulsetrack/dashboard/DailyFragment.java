@@ -1,4 +1,4 @@
-package com.riis.pulsetrackpro.dashboard;
+package com.riis.pulsetrack.dashboard;
 
 
 import android.graphics.Color;
@@ -13,9 +13,9 @@ import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.GraphViewDataInterface;
 import com.jjoe64.graphview.GraphViewSeries;
 import com.jjoe64.graphview.ValueDependentColor;
-import com.riis.pulsetrackpro.R;
-import com.riis.pulsetrackpro.model.FitHeartRateBPM;
-import com.riis.pulsetrackpro.model.FitHeartRateModel;
+import com.riis.pulsetrack.R;
+import com.riis.pulsetrack.model.FitHeartRateBPM;
+import com.riis.pulsetrack.model.FitHeartRateModel;
 
 import java.util.ArrayList;
 import java.util.Date;
